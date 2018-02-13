@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+       <Button alignment="TOP_LEFT" onAction="#printTest" text="Test" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <Label fx:id="test" alignment="TOP_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10" prefWidth="50" />
+      <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="50" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="25.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="25.0" />
+   </rowConstraints>
+</GridPane>
